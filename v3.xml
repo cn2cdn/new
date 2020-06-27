@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+    <Ad id="1">
+        <InLine>
+            <AdSystem>videoclass</AdSystem>
+            <AdTitle />
+            <Creatives>
+                <Creative sequence="1" id="1">
+                    <Linear skipoffset="00:00:35">
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[/u/pay]]></ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" type="video/mp4"><![CDATA[/static/box.mp4]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

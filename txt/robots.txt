@@ -1,0 +1,4 @@
+#AMS_TEAM ROBOTS Telegram
+User-agent: *
+Disallow:
+Sitemap: https://www.2022.dev/sitemap/index.xml

@@ -1,0 +1,316 @@
+.header .m_search{
+	display: none;
+}
+.amsteam-m{
+	display: none;
+}
+.m_ad{
+	display: none;
+}
+.p_ad{
+	display: block;
+}
+
+    @media screen and (max-width:1800px){  
+    	
+    	.wrapper{
+    		width: 1420px;
+    	}
+    	.header .search .txt{
+    		width: 440px;
+    	}
+    	.subnav{
+    	}
+    	.subnav .wrapper{
+    	}
+    	
+    	.main{
+    		width: 1060px;
+    	}
+    	.subnav_box .left{
+    		width: 480px;
+    	}
+    	.subnav_box .right{
+    		width: 920px;
+    	}
+    	.subnav_box .right li{
+    		width: 220px;
+    	}
+    	.msg_list,
+    	.msg_post{
+    		width: 1420px;
+    	}
+    }
+  @media screen and (max-width:1440px){
+    	
+    	.wrapper{
+    		width: 1060px !important;
+    	}
+    	.postwrap{
+			overflow: hidden;
+    	}
+    	.header .search .txt{
+    		width: 250px; font-size: 16px;
+    	}
+    	.header .search .btn{
+    		width: 70px;
+    	}
+    	.header .right_btns a{
+    		padding: 0 15px; font-size: 16px;
+    	}
+    	.main{
+    		width: 700px;
+    	}
+    	.topbar{
+    		font-size: 18px;
+    	}
+    	.subnav .wrapper >h2{
+    		font-size: 18px;
+    	}
+    	.subnav .wrapper >ul> li{
+    		margin-left: 30px;
+    	}
+    	.subnav .wrapper >ul> li>h3{
+    		font-size: 18px;
+    	}
+    	.subnav_box .left{
+    		width: 260px;
+    	}
+    	.subnav_box .left h2 img{
+    		width: 40px;
+    	}
+    	.subnav_box .left h2{
+    		font-size: 12px;
+    	}
+    	.subnav_box .left li{
+    		font-size: 12px;
+    	}
+    	.subnav_box .right{
+    		width: 770px;
+    	}
+    	.subnav_box .right li{
+    		width: 180px;
+    	}
+    	.subnav_box .right li h4{
+    		font-size: 12px;
+    	}
+    	.main_reply .body_r{
+    		display: none;
+    	}
+    	.main_user .views{
+    		padding-top: 0;
+    	}
+    	.main_user .icons{
+    		margin-top: 20px;
+    	}
+    	.user_post,
+    	.user_flow,
+    	.user_reply{
+    		width: 700px;
+    	}
+    	.msg_list,
+    	.msg_post{
+    		width: auto; margin-left: 20px; margin-right: 20px;
+    	}
+    	.msg_list .body li{
+    		height: auto; line-height: inherit;
+    	}
+    	.msg_list .body .btn{
+    		float: none; clear: both; text-align: right;
+    	}
+    }
+    
+     @media screen and (max-width:1080px){
+		 .topbar .wrapper, .header .wrapper, .subnav .wrapper {
+			 width: auto!important;
+			 padding: 0 0.6rem;
+		 }
+    	.wrapper{
+    		width: auto !important; padding: 0 0.4rem;
+    	}
+    	.subnav{
+    		display: none;
+    	}
+    	.header .search{
+    		display: none;
+    	}
+
+		 .main{
+    		width: auto; float: none;
+    	}
+    	.aside{
+    		display: none;
+    	}
+    	.right_menu{
+    		display: none;
+    	}
+    	.post_item{
+    		width:calc( 100% - 0px ); float: none;
+    	}
+    	.post_nav{
+
+    	}
+    	.post_nav li{
+    		margin: 0 20px;
+    	}
+    	.post_nav li img{
+    		width: 80px;
+    	}
+    	.post_add{
+    		width: 500px; margin-left: -250px;
+    	}
+    	.post_add .ava{
+    		left: -60px;
+    	}
+    	.post_add .ava img{
+    		width: 48px;
+    	}
+    	.main_post .postwrap{
+    		width: auto;
+    	}
+    	.main_post .postwrap .post_item{
+    		width: 100%;
+    	}
+    	.set_nav{
+    		padding: 0; text-align: center; font-size: 16px;
+    	}
+    	.set_nav li{
+    		margin-right: 20px;
+    	}
+    	.set_form{
+    		width: auto; margin-left: 20px; margin-right: 20px;
+    	}
+
+    	.user_wrap{
+    		background: #fff;
+    	}
+    	.user_left{
+    		width: auto; float: none; background: #2b2b2b; overflow: hidden;
+    	}
+    	.user_vis{
+    		text-align: center;
+    	}
+    	.user_right{
+    		width: auto; padding: 0 20px;
+    	}
+    	.user_post,
+    	.user_flow,
+    	.user_reply{
+    		width: auto;
+    	}
+    	.edit_theme li{
+    		width: 100px; margin-right: 10px;
+    	}
+    	.msg_list .body .img{
+    		float: none; text-align: center;
+    	}
+    	.msg_list .body .txt{
+    		float: none; margin-left: 0;
+    	}
+    	.loginbox{
+    		width: auto;
+    	}
+    	.loginbox .head h2{
+    		font-size: 26px;
+    	}
+    	.topbar {
+    		font-size: 12px;
+    	}
+    	.topbar dt{
+    		margin-right: 20px;
+    	}
+    	.header{
+    		/*height: 60px;*/
+    	}
+    	.header .logo{
+    		width: 145px;
+    	}
+    	.header .right_btns a{
+    		height: 32px; line-height: 32px; font-size: 12px; padding: 0 5px;
+    	}
+    	.header .right{
+    		margin-top: 0;
+    	}
+    	.main_user .icons{
+    		font-size: 12px;
+    	}
+    	.main_user .icons a{
+    		padding-left: 18px; background-size: 18px auto;
+    	}
+    	.set_form .head h2{
+    		font-size: 14px;
+    	}
+    	.header_sm{
+    		padding-top: 15px; padding-left: 20px;
+    	}
+    	.header .right_btns a.write{
+    		background-size: 20px;
+    	}
+    	.msg_list .head{
+    		font-size: 14px
+    	}
+    	.loginbox .urlname{
+    		font-size: 26px;
+    	}
+    	.loginbox .urlname input{
+    		width: 150px;
+    	}
+    	.user_post .txt{
+    		font-size: 18px;
+    	}
+    	.user_post .txt p{
+    		font-size: 16px;
+    	}
+    	.edit_banner img{
+    		width: 300px;
+    	}
+    	.msg_post textarea{
+    		font-size: 18px;
+    	}
+    	.header_sm{
+    		position: static;
+    	}
+    	.user_wrap{
+    		margin-top: 0;
+    	}
+    	.user_left{
+    		position: static;
+    	}
+    	.user_right{
+    		margin-left: 0;
+    	}
+    }
+
+
+
+
+ 
+ /* 电脑小屏--md */
+    @media screen and (max-width:1100px){
+		.header{
+			display: none;
+		}
+		.topbar{
+			display: none;
+		}
+		.m_ad {
+			display: block;
+		}
+		.p_ad{
+			display: none;
+		}
+		.amsteam-m { display: block;}
+
+    }
+    /* 平板--sm */
+    /*@media screen and (max-width:992px) {
+    	
+    	
+    }
+    */
+
+    @media screen and (max-width:768px){
+		.header .logo{
+			width: 145px;
+		}
+    }
