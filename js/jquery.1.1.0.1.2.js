@@ -2122,43 +2122,7 @@ function user_my_img() {
         }).prop("disabled", !$.support.fileInput).parent().addClass($.support.fileInput ? void 0 : "disabled")
     })
 }
-function lp_pixel_callback(data) {
-    tracker_url='https://amsteam.521293.com/';
-    var o = document.createElement("img");
-    if (typeof window['getUclick'] == 'function'){
-        o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login&uclick='+getUclick();
-    }else{
-        o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login';
-    }
-    // function cnv_pixel(){
-    //     var o = document.createElement("img");
-    //     if (typeof window['getUclick'] == 'function'){
-    //         o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login&uclick='+getUclick();
-    //     }else{
-    //         o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login';
-    //     }
-    // }
-    // cnv_pixel()
-}
 
-function lp_callback(data) {
-    tracker_url='https://amsteam.521293.com/';
-    var o = document.createElement("img");
-    if (typeof window['getUclick'] == 'function'){
-        o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login&uclick='+getUclick();
-    }else{
-        o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login';
-    }
-    // function cnv_pixel(){
-    //     var o = document.createElement("img");
-    //     if (typeof window['getUclick'] == 'function'){
-    //         o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login&uclick='+getUclick();
-    //     }else{
-    //         o.src=tracker_url+'oracle.php?cnv_id='+data+'&payout=0&cnv_status=login';
-    //     }
-    // }
-    // cnv_pixel()
-}
 function paypostss (key) {
     $.xpost('/u/pay', {s:key}, function(code, message) {
         if(code == 0) {
