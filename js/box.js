@@ -8,7 +8,7 @@ function box_a1() {
         centerVertical: true,
         buttons: {
             noclose: {
-                label: "试试搜索功能你会明白",
+                label: "试试顶部搜索功能你会明白",
                 className: 'btn-warning text-center',
                 callback: function(){
                     $(location).attr('href','/');
@@ -38,13 +38,13 @@ function box_a1() {
 function box_a2() {
 
     var dialog = bootbox.dialog({
-        message: "<h5 class='text-white text-center mb-0'>难道你不选择加入2022吗?</h5>",
+        message: "<h5 class='text-white text-center mb-0'>你需要登录或者注册加入2022</h5>",
         size: 'large',
         closeButton: false,
         centerVertical: true,
         buttons: {
             noclose: {
-                label: "试试搜索功能你会明白",
+                label: "试试顶部搜索功能你会明白",
                 className: 'btn-warning text-center',
                 callback: function(){
                     $(location).attr('href','/');
@@ -52,7 +52,7 @@ function box_a2() {
                 }
             },
             ok: {
-                label: "注册开通博客",
+                label: "去注册\登录",
                 className: 'btn-warning text-center',
                 callback: function(){
                     $(location).attr('href','/create');
