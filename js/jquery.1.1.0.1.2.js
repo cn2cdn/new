@@ -1995,20 +1995,6 @@ function plays(){
                     animated: false // Default true
                 },
                 allowTheatre: false
-            },
-            vastOptions: {
-                skipButtonCaption: '点击加入VIP免广告 [seconds]',
-                skipButtonClickCaption: '跳過廣告 <span class="skip_button_icon"></span>',
-                adList: [
-                    {
-                        roll: 'preRoll',
-                        vastTag: '/static/v3.xml?2',
-                        adText: '你不是VIP使用低速网络',
-                        adCTAText: false,
-
-                    }
-
-                ],
             }
         }
     );
