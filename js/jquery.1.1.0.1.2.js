@@ -1883,83 +1883,84 @@ function applink(url) {
 }
 
 
-function get(keys){
-    var container = $('.postwrap');
-    container = $('.postwrap');
-    container.show()
-    thumb = '.post_item';
-    banner = '.tamworth';
-    container.imagesLoaded(function(){
+    function get(keys){
+        var container = $('.postwrap');
+        container = $('.postwrap');
+        container.show()
+        thumb = '.post_item';
+        banner = '.tamworth';
         container.masonry({
             itemSelector: thumb,
             columnWidth: 340,
             // gutter: 0,
             // fitWidth: true,
             transitionDuration: '0.1s',
-            opacity:'0',
-            transform:''
+            // opacity:'0',
+            // transform:''
             // animationOptions: {
             //     duration: 800,
             //     easing: 'easeInOutBack',
             //     queue: true
             // }
         });
-    });
+        setTimeout(function(){
+            $('.loading').fadeOut();
+        },100)
 
-    setTimeout(function(){
-        $('.loading').fadeOut();
-    },100)
+        $("img").lazyload({
+            effect:"show",
+            failurelimit:40,
+            //load:f_masonry,
+        });
 
-    $("img").lazyload({
-        effect:"show",
-        failurelimit:40,
-        //load:f_masonry,
-    });
-
-    var flag = false;
-    var currPage = 1; //页码
-    $(window).scroll(function(){
+        var flag = false;
+        var currPage = 1; //页码
+        $(window).scroll(function(){
 
 
-        if(flag){
+            if(flag){
 
-            return false;
-        }
+                return false;
+            }
 
-        if($(window).height()+ 300 + $(window).scrollTop() >= ($(document).height())) {
+            if($(window).height()+ 300 + $(window).scrollTop() >= ($(document).height())) {
 
-            flag = true;
-            loadData(currPage);
-        }
-    });
-
-
-    function loadData(page){
+                flag = true;
+                loadData(currPage);
+            }
+        });
 
 
-        $.get(keys, {  page : page  },
+        function loadData(page){
 
-            function(data) {
-                var $newElems = $(data).appendTo(container);
 
-                $newElems.imagesLoaded(function(){
+            $.get(keys, {  page : page  },
 
+                function(data) {
+                    var $newElems = $(data).appendTo(container);
+
+                    // $newElems.imagesLoaded(function(){
+                    //
+                    //     container.masonry( 'appended', $newElems,true);
+                    //
+                    //     // //懒加载
+                    //     // $("img").lazyload({
+                    //     //     effect:"show",
+                    //     //     failurelimit:40,
+                    //     //     //load:f_masonry,
+                    //     // });
+                    //
+                    //     flag = false;
+                    //     currPage ++;
+                    // });
                     container.masonry( 'appended', $newElems,true);
-
-                    //懒加载
-                    $("img").lazyload({
-                        effect:"show",
-                        failurelimit:40,
-                        //load:f_masonry,
-                    });
-
                     flag = false;
                     currPage ++;
-                });
-            })
-    }
 
-}
+                })
+        }
+
+    }
 
 function play(){
     fluidPlayer(
